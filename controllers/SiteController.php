@@ -55,7 +55,23 @@ class SiteController extends Controller
 
     public function actionIndex()
     {
-        return $this->render('index');
+        $query = Posts::find()->where(['hide' = 0]);
+        $pagination = new Pagination([
+            'defaultPageSize' => 5,
+            'totalCount' => $query->count()
+            ]);
+
+        $posts = $query->orderBy(['date' => SORT_DESC])
+                ->offset($pagination->offset)
+                ->limit($pagination->limit)
+                ->all();
+        Posts::setNumbers($posts);
+        return $this->render('index', [
+                'posts' => $posts,
+                'active_page' => Yii::$app->request->get("page", 1),
+                'count_pages' => $pagination->getPageCount(),
+                'pagination' => $pagination
+            ]);
     }
 /*
     public function actionLogin()
@@ -151,4 +167,9 @@ class SiteController extends Controller
 		]);
 	}
 	*/
+
+
+
+
+
 }
