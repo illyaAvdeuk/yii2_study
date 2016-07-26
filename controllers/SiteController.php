@@ -14,7 +14,12 @@ use app\models\MyForm;
 use app\models\User;
 use app\models\Comments;
 use yii\data\Pagination;
-
+use app\models\Posts;
+use app\models\Courses;
+use app\models\Minicourses;
+use app\models\Reviews;
+use app\models\Sef;
+use app\models\Sites;
 class SiteController extends Controller
 {
     public function behaviors()

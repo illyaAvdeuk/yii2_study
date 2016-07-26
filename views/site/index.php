@@ -1,53 +1,47 @@
 <?php
 
 /* @var $this yii\web\View */
+use yii\widgets\LinkPager;
+$this->title = 'Личный блог';
 
-$this->title = 'My Yii Application';
+$this->registerMetaTag([
+    'name' => 'description',
+    'content' => 'Личный блог'
+    ]);
+$this->registerMetaTag([
+    'name' => 'keywords',
+    'content' => 'блог, рассылки'
+    ]);
+
 ?>
-<div class="site-index">
 
-    <div class="jumbotron">
-        <h1>Congratulations!</h1>
+<?php 
+    foreach  ($posts as $post)
+        include "intro_post.php";
 
-        <p class="lead">You have successfully created your Yii-powered application.</p>
+?>
+<br />
+<hr />
+<div id="pages">
+        <?= 
 
-        <p><a class="btn btn-lg btn-success" href="http://www.yiiframework.com">Get started with Yii</a></p>
-    </div>
+            LinkPager::wiget([
+                    'pagination' => $pagination,
+                    'firstPageLabel' => 'В начало',
+                    'lastPageLabel' => 'В конец',
+                    'prevPageLabel' => '&laquo;',
+                    //'lastPageLabel' => 'В конец',
+                ])
 
-    <div class="body-content">
+        ?>
+        <span>Страница <?=$active_page?> из <?=$count_pages?></span>
+    <table>
+        <tr>
+            <td>
+                
+            </td>
+            <td>
+              
+                  <div class="clear"></div>
 
-        <div class="row">
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/doc/">Yii Documentation &raquo;</a></p>
-            </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/forum/">Yii Forum &raquo;</a></p>
-            </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/extensions/">Yii Extensions &raquo;</a></p>
-            </div>
-        </div>
-
-    </div>
-</div>
+                                    </div>

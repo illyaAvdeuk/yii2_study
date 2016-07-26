@@ -33,13 +33,13 @@ $action = Yii::$app->controller->action->id;
 <div id="bg">
         <div id="container">
             <div id="header">
-                <img src="images/header.png" alt="Шапка сайта" />
+                <img src="/web/images/header.png" alt="Шапка сайта" />
             </div>
             <div id="topmenu">
                 <ul>
                                             <li>
                             <a  href="<?=Yii::$app->urlManager->createUrl(["site/index"])?>" <?php if ($action == "index") { ?> class="active" <?php } ?>>
-                            <img src="images/home.png" alt="Главная" />                         </a>
+                            <img src="/web/images/home.png" alt="Главная" />                         </a>
                         </li>
                                             <li>
                             <a  href="<?=Yii::$app->urlManager->createUrl(["site/author"])?>" <?php if ($action == "author") { ?> class="active" <?php } ?>>
@@ -71,7 +71,7 @@ $action = Yii::$app->controller->action->id;
                                 </td>
                                 <td>
                                     <input type="hidden" name="func" value="search" />
-                                    <input type="image" src="images/button_search.png" class="icon_button" alt="Поиск" />
+                                    <input type="image" src="/web/images/button_search.png" class="icon_button" alt="Поиск" />
                                 </td>
                             </tr>
                         </table>
@@ -83,195 +83,27 @@ $action = Yii::$app->controller->action->id;
                 <table id="content">
                     <tr>
                         <td id="left">
-                            <div class="post">
-    <h2>Выпуск №31. Как сделать мультиязычный сайт?</h2>
-    <hr />
-    <table class="post_info">
-        <tr>
-            <td>
-                <img src="images/date.png" alt="Дата" />
-            </td>
-            <td>
-                <p>27 Июня, 2016</p>
-            </td>
-            <td class="right">
-                <img src="images/hits.png" alt="Просмотров" />
-            </td>
-            <td class="center">
-                <p>3347</p>
-            </td>
-        </tr>
-    </table>
-    <div class="post_text">
-        <img class="intro" src="https://blog.myrusakov.ru/images/posts/multilanguage.png" alt="Как сделать мультиязычный сайт?" />
-        <p>Я уже обещал разобрать мультиязычность на сайте, и в сегодняшнем видео я это сделаю.</p>     <div class="clear"></div>
-    </div>
-    <p class="more">
-        <a href="https://blog.myrusakov.ru/multilanguage.html">Читать полностью</a>
-        <a href="https://blog.myrusakov.ru/subscribe.html">Другие выпуски</a>
-    </p>
-</div><div class="post">
-    <h2>Выпуск №30. Настройка HTTPS на сайте</h2>
-    <hr />
-    <table class="post_info">
-        <tr>
-            <td>
-                <img src="images/date.png" alt="Дата" />
-            </td>
-            <td>
-                <p>17 Мая, 2016</p>
-            </td>
-            <td class="right">
-                <img src="images/hits.png" alt="Просмотров" />
-            </td>
-            <td class="center">
-                <p>6145</p>
-            </td>
-        </tr>
-    </table>
-    <div class="post_text">
-        <img class="intro" src="https://blog.myrusakov.ru/images/posts/https.png" alt="Настройка HTTPS на сайте" />
-        <p>Относительно недавно я на некоторых своих сайтах установил https. В этом видео Вы узнаете, какие преимущества даёт https, как он работает, где взять бесплатный сертификат на 3 года, сэкономив порядка 3-20 тысяч рублей, и как его установить.</p>     <div class="clear"></div>
-    </div>
-    <p class="more">
-        <a href="https://blog.myrusakov.ru/https.html">Читать полностью</a>
-        <a href="https://blog.myrusakov.ru/subscribe.html">Другие выпуски</a>
-    </p>
-</div><div class="post">
-    <h2>Выпуск №29. Работа с API vk.com</h2>
-    <hr />
-    <table class="post_info">
-        <tr>
-            <td>
-                <img src="images/date.png" alt="Дата" />
-            </td>
-            <td>
-                <p>18 Февраля, 2016</p>
-            </td>
-            <td class="right">
-                <img src="images/hits.png" alt="Просмотров" />
-            </td>
-            <td class="center">
-                <p>6434</p>
-            </td>
-        </tr>
-    </table>
-    <div class="post_text">
-        <img class="intro" src="https://blog.myrusakov.ru/images/posts/api-vk.png" alt="Работа с API vk.com" />
-        <p>В этом уроке, учитывая интерес к этой теме, я расскажу, как работать с API vk.com. К концу урока мы реализуем вполне рабочее приложение.</p>     <div class="clear"></div>
-    </div>
-    <p class="more">
-        <a href="https://blog.myrusakov.ru/api-vk.html">Читать полностью</a>
-        <a href="https://blog.myrusakov.ru/subscribe.html">Другие выпуски</a>
-    </p>
-</div><div class="post">
-    <h2>Выпуск №28. Мошенничество на fl.ru</h2>
-    <hr />
-    <table class="post_info">
-        <tr>
-            <td>
-                <img src="images/date.png" alt="Дата" />
-            </td>
-            <td>
-                <p>12 Января, 2016</p>
-            </td>
-            <td class="right">
-                <img src="images/hits.png" alt="Просмотров" />
-            </td>
-            <td class="center">
-                <p>9378</p>
-            </td>
-        </tr>
-    </table>
-    <div class="post_text">
-        <img class="intro" src="https://blog.myrusakov.ru/images/posts/fraud.png" alt="Мошенничество на fl.ru" />
-        <p>Многие из Вас, наверняка, используют фриланс-сервисы со стороны заказчика. Я сам время от времени обращуюсь за помощью к фрилансерам. И вот не так давно у меня снова появилась задача.</p>      <div class="clear"></div>
-    </div>
-    <p class="more">
-        <a href="https://blog.myrusakov.ru/fraud.html">Читать полностью</a>
-        <a href="https://blog.myrusakov.ru/subscribe.html">Другие выпуски</a>
-    </p>
-</div><div class="post">
-    <h2>Выпуск №27. Мои секреты планирования дел</h2>
-    <hr />
-    <table class="post_info">
-        <tr>
-            <td>
-                <img src="images/date.png" alt="Дата" />
-            </td>
-            <td>
-                <p>8 Декабря, 2015</p>
-            </td>
-            <td class="right">
-                <img src="images/hits.png" alt="Просмотров" />
-            </td>
-            <td class="center">
-                <p>5482</p>
-            </td>
-        </tr>
-    </table>
-    <div class="post_text">
-        <img class="intro" src="https://blog.myrusakov.ru/images/posts/plan.png" alt="Мои секреты планирования дел" />
-        <p>У меня часто спрашивают, как я занимаюсь планированием своих дел, как всё успеваю, какую программу использую и так далее. И в сегодняшнем видео я решил ответить на все вопросы, плюс показать процесс планирования создания сайта. Видео действительно очень полезное, и я рекомендую его посмотреть абсолютно всем.</p>        <div class="clear"></div>
-    </div>
-    <p class="more">
-        <a href="https://blog.myrusakov.ru/plan.html">Читать полностью</a>
-        <a href="https://blog.myrusakov.ru/subscribe.html">Другие выпуски</a>
-    </p>
-</div><br />
-<hr />
-<div id="pagination">
-    <table>
-        <tr>
-            <td>
-                <span>Страница 1 из 12</span>
-            </td>
-            <td>
-                <div id="pages">
-                    &nbsp;
-                    В начало
-                                        &nbsp;
-                    &laquo;
-                                                                &nbsp;
-                                                    1                                                                   &nbsp;
-                                                    <a href="https://blog.myrusakov.ru/?page=2">2</a>
-                                                                    &nbsp;
-                                                    <a href="https://blog.myrusakov.ru/?page=3">3</a>
-                                                                    &nbsp;
-                                                    <a href="https://blog.myrusakov.ru/?page=4">4</a>
-                                                                    &nbsp;
-                                                    <a href="https://blog.myrusakov.ru/?page=5">5</a>
-                                                                    &nbsp;
-                                                    <a href="https://blog.myrusakov.ru/?page=6">6</a>
-                                                                    &nbsp;
-                                                    <a href="https://blog.myrusakov.ru/?page=7">7</a>
-                                                                    &nbsp;
-                                                    <a href="https://blog.myrusakov.ru/?page=8">8</a>
-                                                                    &nbsp;
-                                                    <a href="https://blog.myrusakov.ru/?page=9">9</a>
-                                                                    &nbsp;
-                                                    <a href="https://blog.myrusakov.ru/?page=10">10</a>
-                                                                &nbsp;
-                    
-                    
-                                        <a href="https://blog.myrusakov.ru/?page=2" title="Вперёд">&raquo;</a>
-                                        &nbsp;
-                                        <a href="https://blog.myrusakov.ru/?page=12">В конец&raquo;</a>
-                                    </div>
+                            <?=$content?>
             </td>
         </tr>
     </table>
 </div>                      </td>
                         <td id="right">
                                                             <div class="right_block">
-                                    <div id="author">
-    <h3>Михаил Русаков</h3>
-    <img src="images/mr.png" alt="Михаил Русаков" />
-    <br />
-    <a href="https://blog.myrusakov.ru/author.html">Об авторе</a>
-    <br />
-    <a rel="external" class="button" href="https://vk.com/myrusakov">Автор в контакте</a>
-</div>                              </div>
+                                                            <?php if ($action == "index"){?>
+	                                    <div id="author">
+	    <h3>Михаил Русаков</h3>
+	    <img src="/web/images/mr.png" alt="Михаил Русаков" />
+	    <br />
+	    <a href="<?=Yii::$app->urlManager->createUrl(["site/author"])?>">Об авторе</a>
+	    <br />
+	    <a rel="external" class="button" href="https://vk.com/myrusakov">Автор в контакте</a>
+	</div>       
+<?php  } else { ?>
+
+	<h3>Другие записи</h3>
+<?php  }  ?>
+                       </div>
                                                             <div class="right_block">
                                     <table id="right_block_courses">
     <tr>
@@ -281,15 +113,15 @@ $action = Yii::$app->controller->action->id;
                     <table>
                         <tr>
                             <td class="arrow">
-                                <img src="images/left.png" alt="Влево" onclick="changeMiniCourse(false, 'right_minicourses_list')" />
+                                <img src="/web/images/left.png" alt="Влево" onclick="changeMiniCourse(false, 'right_minicourses_list')" />
                             </td>
                             <td class="arrow">
-                                <img src="images/right.png" alt="Вправо" onclick="changeMiniCourse(true, 'right_minicourses_list')" />
+                                <img src="/web/images/right.png" alt="Вправо" onclick="changeMiniCourse(true, 'right_minicourses_list')" />
                             </td>
                         </tr>
                         <tr>
                             <td colspan="2" class="center">
-                                <img src="images/courses/freeim2.png" alt="Пример создания Интернет-магазина на OpenCart 2.0" />
+                                <img src="/web/images/courses/freeim2.png" alt="Пример создания Интернет-магазина на OpenCart 2.0" />
                             </td>
                         </tr>
                     </table>
@@ -302,15 +134,15 @@ $action = Yii::$app->controller->action->id;
                     <table>
                         <tr>
                             <td class="arrow">
-                                <img src="images/left.png" alt="Влево" onclick="changeMiniCourse(false, 'right_minicourses_list')" />
+                                <img src="/web/images/left.png" alt="Влево" onclick="changeMiniCourse(false, 'right_minicourses_list')" />
                             </td>
                             <td class="arrow">
-                                <img src="images/right.png" alt="Вправо" onclick="changeMiniCourse(true, 'right_minicourses_list')" />
+                                <img src="/web/images/right.png" alt="Вправо" onclick="changeMiniCourse(true, 'right_minicourses_list')" />
                             </td>
                         </tr>
                         <tr>
                             <td colspan="2" class="center">
-                                <img src="images/courses/freeyii.png" alt="Пример создания сайта на фреймворке Yii 2.0" />
+                                <img src="/web/images/courses/freeyii.png" alt="Пример создания сайта на фреймворке Yii 2.0" />
                             </td>
                         </tr>
                     </table>
@@ -323,15 +155,15 @@ $action = Yii::$app->controller->action->id;
                     <table>
                         <tr>
                             <td class="arrow">
-                                <img src="images/left.png" alt="Влево" onclick="changeMiniCourse(false, 'right_minicourses_list')" />
+                                <img src="/web/images/left.png" alt="Влево" onclick="changeMiniCourse(false, 'right_minicourses_list')" />
                             </td>
                             <td class="arrow">
-                                <img src="images/right.png" alt="Вправо" onclick="changeMiniCourse(true, 'right_minicourses_list')" />
+                                <img src="/web/images/right.png" alt="Вправо" onclick="changeMiniCourse(true, 'right_minicourses_list')" />
                             </td>
                         </tr>
                         <tr>
                             <td colspan="2" class="center">
-                                <img src="images/courses/freefl.png" alt="Заработок на создании сайтов под заказ" />
+                                <img src="/web/images/courses/freefl.png" alt="Заработок на создании сайтов под заказ" />
                             </td>
                         </tr>
                     </table>
@@ -344,15 +176,15 @@ $action = Yii::$app->controller->action->id;
                     <table>
                         <tr>
                             <td class="arrow">
-                                <img src="images/left.png" alt="Влево" onclick="changeMiniCourse(false, 'right_minicourses_list')" />
+                                <img src="/web/images/left.png" alt="Влево" onclick="changeMiniCourse(false, 'right_minicourses_list')" />
                             </td>
                             <td class="arrow">
-                                <img src="images/right.png" alt="Вправо" onclick="changeMiniCourse(true, 'right_minicourses_list')" />
+                                <img src="/web/images/right.png" alt="Вправо" onclick="changeMiniCourse(true, 'right_minicourses_list')" />
                             </td>
                         </tr>
                         <tr>
                             <td colspan="2" class="center">
-                                <img src="images/courses/freewp.png" alt="Пример создания блога на WordPress" />
+                                <img src="/web/images/courses/freewp.png" alt="Пример создания блога на WordPress" />
                             </td>
                         </tr>
                     </table>
@@ -365,15 +197,15 @@ $action = Yii::$app->controller->action->id;
                     <table>
                         <tr>
                             <td class="arrow">
-                                <img src="images/left.png" alt="Влево" onclick="changeMiniCourse(false, 'right_minicourses_list')" />
+                                <img src="/web/images/left.png" alt="Влево" onclick="changeMiniCourse(false, 'right_minicourses_list')" />
                             </td>
                             <td class="arrow">
-                                <img src="images/right.png" alt="Вправо" onclick="changeMiniCourse(true, 'right_minicourses_list')" />
+                                <img src="/web/images/right.png" alt="Вправо" onclick="changeMiniCourse(true, 'right_minicourses_list')" />
                             </td>
                         </tr>
                         <tr>
                             <td colspan="2" class="center">
-                                <img src="images/courses/freehtml5.png" alt="HTML5 и CSS3 для начинающих" />
+                                <img src="/web/images/courses/freehtml5.png" alt="HTML5 и CSS3 для начинающих" />
                             </td>
                         </tr>
                     </table>
@@ -386,15 +218,15 @@ $action = Yii::$app->controller->action->id;
                     <table>
                         <tr>
                             <td class="arrow">
-                                <img src="images/left.png" alt="Влево" onclick="changeMiniCourse(false, 'right_minicourses_list')" />
+                                <img src="/web/images/left.png" alt="Влево" onclick="changeMiniCourse(false, 'right_minicourses_list')" />
                             </td>
                             <td class="arrow">
-                                <img src="images/right.png" alt="Вправо" onclick="changeMiniCourse(true, 'right_minicourses_list')" />
+                                <img src="/web/images/right.png" alt="Вправо" onclick="changeMiniCourse(true, 'right_minicourses_list')" />
                             </td>
                         </tr>
                         <tr>
                             <td colspan="2" class="center">
-                                <img src="images/courses/freephp2.png" alt="Создание движка на PHP для начинающих" />
+                                <img src="/web/images/courses/freephp2.png" alt="Создание движка на PHP для начинающих" />
                             </td>
                         </tr>
                     </table>
@@ -407,15 +239,15 @@ $action = Yii::$app->controller->action->id;
                     <table>
                         <tr>
                             <td class="arrow">
-                                <img src="images/left.png" alt="Влево" onclick="changeMiniCourse(false, 'right_minicourses_list')" />
+                                <img src="/web/images/left.png" alt="Влево" onclick="changeMiniCourse(false, 'right_minicourses_list')" />
                             </td>
                             <td class="arrow">
-                                <img src="images/right.png" alt="Вправо" onclick="changeMiniCourse(true, 'right_minicourses_list')" />
+                                <img src="/web/images/right.png" alt="Вправо" onclick="changeMiniCourse(true, 'right_minicourses_list')" />
                             </td>
                         </tr>
                         <tr>
                             <td colspan="2" class="center">
-                                <img src="images/courses/freejs.png" alt="Видеокурс по основам JavaScript" />
+                                <img src="/web/images/courses/freejs.png" alt="Видеокурс по основам JavaScript" />
                             </td>
                         </tr>
                     </table>
@@ -428,15 +260,15 @@ $action = Yii::$app->controller->action->id;
                     <table>
                         <tr>
                             <td class="arrow">
-                                <img src="images/left.png" alt="Влево" onclick="changeMiniCourse(false, 'right_minicourses_list')" />
+                                <img src="/web/images/left.png" alt="Влево" onclick="changeMiniCourse(false, 'right_minicourses_list')" />
                             </td>
                             <td class="arrow">
-                                <img src="images/right.png" alt="Вправо" onclick="changeMiniCourse(true, 'right_minicourses_list')" />
+                                <img src="/web/images/right.png" alt="Вправо" onclick="changeMiniCourse(true, 'right_minicourses_list')" />
                             </td>
                         </tr>
                         <tr>
                             <td colspan="2" class="center">
-                                <img src="images/courses/book.png" alt="Создание сайта от начала и до конца" />
+                                <img src="/web/images/courses/book.png" alt="Создание сайта от начала и до конца" />
                             </td>
                         </tr>
                     </table>
@@ -449,15 +281,15 @@ $action = Yii::$app->controller->action->id;
                     <table>
                         <tr>
                             <td class="arrow">
-                                <img src="images/left.png" alt="Влево" onclick="changeMiniCourse(false, 'right_minicourses_list')" />
+                                <img src="/web/images/left.png" alt="Влево" onclick="changeMiniCourse(false, 'right_minicourses_list')" />
                             </td>
                             <td class="arrow">
-                                <img src="images/right.png" alt="Вправо" onclick="changeMiniCourse(true, 'right_minicourses_list')" />
+                                <img src="/web/images/right.png" alt="Вправо" onclick="changeMiniCourse(true, 'right_minicourses_list')" />
                             </td>
                         </tr>
                         <tr>
                             <td colspan="2" class="center">
-                                <img src="images/courses/freeim.png" alt="Создание Интернет-магазина с нуля" />
+                                <img src="/web/images/courses/freeim.png" alt="Создание Интернет-магазина с нуля" />
                             </td>
                         </tr>
                     </table>
@@ -470,15 +302,15 @@ $action = Yii::$app->controller->action->id;
                     <table>
                         <tr>
                             <td class="arrow">
-                                <img src="images/left.png" alt="Влево" onclick="changeMiniCourse(false, 'right_minicourses_list')" />
+                                <img src="/web/images/left.png" alt="Влево" onclick="changeMiniCourse(false, 'right_minicourses_list')" />
                             </td>
                             <td class="arrow">
-                                <img src="images/right.png" alt="Вправо" onclick="changeMiniCourse(true, 'right_minicourses_list')" />
+                                <img src="/web/images/right.png" alt="Вправо" onclick="changeMiniCourse(true, 'right_minicourses_list')" />
                             </td>
                         </tr>
                         <tr>
                             <td colspan="2" class="center">
-                                <img src="images/courses/freemakeup.png" alt="Мини-курс по вёрстке сайтов" />
+                                <img src="/web/images/courses/freemakeup.png" alt="Мини-курс по вёрстке сайтов" />
                             </td>
                         </tr>
                     </table>
@@ -491,15 +323,15 @@ $action = Yii::$app->controller->action->id;
                     <table>
                         <tr>
                             <td class="arrow">
-                                <img src="images/left.png" alt="Влево" onclick="changeMiniCourse(false, 'right_minicourses_list')" />
+                                <img src="/web/images/left.png" alt="Влево" onclick="changeMiniCourse(false, 'right_minicourses_list')" />
                             </td>
                             <td class="arrow">
-                                <img src="images/right.png" alt="Вправо" onclick="changeMiniCourse(true, 'right_minicourses_list')" />
+                                <img src="/web/images/right.png" alt="Вправо" onclick="changeMiniCourse(true, 'right_minicourses_list')" />
                             </td>
                         </tr>
                         <tr>
                             <td colspan="2" class="center">
-                                <img src="images/courses/freephp.png" alt="Видеокурс по основам PHP" />
+                                <img src="/web/images/courses/freephp.png" alt="Видеокурс по основам PHP" />
                             </td>
                         </tr>
                     </table>
@@ -512,15 +344,15 @@ $action = Yii::$app->controller->action->id;
                     <table>
                         <tr>
                             <td class="arrow">
-                                <img src="images/left.png" alt="Влево" onclick="changeMiniCourse(false, 'right_minicourses_list')" />
+                                <img src="/web/images/left.png" alt="Влево" onclick="changeMiniCourse(false, 'right_minicourses_list')" />
                             </td>
                             <td class="arrow">
-                                <img src="images/right.png" alt="Вправо" onclick="changeMiniCourse(true, 'right_minicourses_list')" />
+                                <img src="/web/images/right.png" alt="Вправо" onclick="changeMiniCourse(true, 'right_minicourses_list')" />
                             </td>
                         </tr>
                         <tr>
                             <td colspan="2" class="center">
-                                <img src="images/courses/html.png" alt="Видеокурс по основам HTML" />
+                                <img src="/web/images/courses/html.png" alt="Видеокурс по основам HTML" />
                             </td>
                         </tr>
                     </table>
@@ -535,7 +367,7 @@ $action = Yii::$app->controller->action->id;
                                     <div class="online">
     <h3>Бесплатный онлайн-семинар</h3>
     <p>
-        <img src="images/11steps.png" alt="Онлайн-семинар" />
+        <img src="/web/images/11steps.png" alt="Онлайн-семинар" />
     </p>
     <p><span>11 шагов к созданию своей Web-студии</span><br />После данного семинара:</p>
     <ul class="ul_mark">
@@ -552,7 +384,7 @@ $action = Yii::$app->controller->action->id;
 <div class="online">
     <h3>Бесплатный онлайн-семинар</h3>
     <p>
-        <img src="images/create-im.png" alt="Онлайн-семинар" />
+        <img src="/web/images/create-im.png" alt="Онлайн-семинар" />
     </p>
     <p><span>Как создать профессиональный Интернет-магазин?</span><br />После данного семинара:</p>
     <ul class="ul_mark">
@@ -568,7 +400,7 @@ $action = Yii::$app->controller->action->id;
 <div class="online">
     <h3>Бесплатный онлайн-семинар</h3>
     <p>
-        <img src="images/5steps.png" alt="Онлайн-семинар" />
+        <img src="/web/images/5steps.png" alt="Онлайн-семинар" />
     </p>
     <p><span>5 шагов и профессиональный сайт готов!</span><br />После данного семинара:</p>
     <ul class="ul_mark">
@@ -583,13 +415,13 @@ $action = Yii::$app->controller->action->id;
                                                             <div class="right_block">
                                     <h3>Рекомендую</h3>
 <div class="recommendation">
-    <img src="images/2domains.png" alt="2domains.ru" />
+    <img src="/web/images/2domains.png" alt="2domains.ru" />
     <a rel="external" href="http://2domains.ru">2domains.ru</a>
     <p>Один из лучших регистраторов доменных имен в рунете. Домен .RU и .РФ всего за 99 рублей. Все домены покупаю только у них!</p>
 </div>
 <br />
 <div class="recommendation">
-    <img src="images/hostia.png" alt="Hostia.ru" />
+    <img src="/web/images/hostia.png" alt="Hostia.ru" />
     <a rel="external" href="http://hostia.ru/billing/host.php?uid=11034">Hostia.ru</a>
     <p>На мой взгляд, лучший хостинг в Рунете. Я перепробовал много их, то они были медленными, то отключались часто, то была высокая цена. <a rel="external" href="http://hostia.ru/billing/host.php?uid=11034">Hostia.ru</a> - это отличная скорость, высокая надёжность и при этом низкая цена (от 0.88$ в месяц).</p>
 </div>                              </div>
