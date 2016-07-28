@@ -102,6 +102,8 @@ $action = Yii::$app->controller->action->id;
 <?php  } else { ?>
 
 	<h3>Другие записи</h3>
+    <?php if ($action == "post") {$post_id = Yii::$app->getRequest()->getQueryParam('id');} else {$post_id = null;}?>
+    <?=PostOthers::widget(['id' => $post_id])  ?>
 <?php  }  ?>
                        </div>
                                                             <div class="right_block">
