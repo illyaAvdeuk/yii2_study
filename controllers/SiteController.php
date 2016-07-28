@@ -60,10 +60,10 @@ class SiteController extends Controller
 
     public function actionIndex()
     {
-        $query = Posts::find()->where(['hide' = 0]);
+        $query = Posts::find()->where(['hide' == 0]);
         $pagination = new Pagination([
-            'defaultPageSize' => 5,
-            'totalCount' => $query->count()
+            'pageSize' => 5,
+            'totalCount' => $query->count(),
             ]);
 
         $posts = $query->orderBy(['date' => SORT_DESC])
