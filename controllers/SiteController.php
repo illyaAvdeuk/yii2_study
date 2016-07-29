@@ -20,6 +20,7 @@ use app\models\Minicourses;
 use app\models\Reviews;
 use app\models\Sef;
 use app\models\Sites;
+use app\components\PostOthers;
 class SiteController extends Controller
 {
     public function behaviors()
@@ -77,6 +78,10 @@ class SiteController extends Controller
                 'count_pages' => $pagination->getPageCount(),
                 'pagination' => $pagination
             ]);
+    }
+     public function actionAuthor()
+    {
+       return $this->render('author');
     }
 /*
     public function actionLogin()
