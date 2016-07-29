@@ -23,7 +23,7 @@ class AppAsset extends AssetBundle
 
     public $cssOptions = ['condition' => 'lte IE8'];
     public $js = [
-    'web/js/functions.js',
+    'js/functions.js',
     '//vk.com/js/api/openapi.js?63',   
     ];
     public $depends = [
