@@ -83,6 +83,14 @@ class SiteController extends Controller
     {
        return $this->render('author');
     }
+
+    public function actionVideo()
+    {
+        $courses = Courses::find()->orderBy(['id' => SORT_DESC])->all();
+        return $this->render('video', [
+                'courses' -> $courses
+            ]);
+    }
 /*
     public function actionLogin()
     {
