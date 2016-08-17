@@ -12,10 +12,12 @@ AppAsset::register($this);
 <head>
 	 <meta charset="<?= Yii::$app->charset ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Document</title>
+    <?= Html::csrfMetaTags() ?>
+	<title><?= Html::encode($this->title) ?></title>
 </head>
 <body>
 <?php $this->beginBody() ?>
+
 	<div class="wrap">
 		<div class="container">
 			<ul class="nav nav-tabs">
