@@ -4,11 +4,13 @@ namespace app\controllers;
 use Yii;
 class PostController extends AppController
 {
-	public function actionTest(){
-
-		$names = ['Illya', 'Aleksander', 'Pasha'];
-	//	$this->debug(Yii::$app);
+	public $layout = 'basic';
+	public function actionIndex(){
 
 			return $this->render('test');
+	}
+	public function actionShow(){
+		//	$this->layout = 'basic';
+			return $this->render('show');
 	}
 }
