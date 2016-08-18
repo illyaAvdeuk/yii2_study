@@ -1,8 +1,14 @@
-<h1>Show action</h1>
+<?php $this->beginBlock('customBlock');?>
+	<h1>Custom block</h1>
+<?php $this->endBlock();?>
+<h2>Show action</h2>
 <button class="btn btn-success" id="btn"> Click me...</button>
 
-<?php 
 
+<?php 
+//echo count($cats->products); // lazy
+debug($cats);
+//debug($cats);
 //$this->title = "Article";
 //$this->registerJsFile('@web/js/scripts.js', ['depends' => 'yii\web\YiiAsset'])
 
