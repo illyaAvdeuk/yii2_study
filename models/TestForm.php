@@ -1,15 +1,21 @@
 <?php 
 
 namespace app\models;
-use yii\base\Model;
+//use yii\base\Model;
+use yii\db\ActiveRecord;
 
-class TestForm extends Model{
 
-	public $name;
-	public $email;
-	public $text;
+
+class TestForm extends ActiveRecord{
+
+	//public $name;
+//	public $email;
+//	public $text;
 	public $checkBox;
 	public $radioList;
+public static function tableName(){
+		return 'posts';
+	}
 
 	public function attributeLabels(){
 

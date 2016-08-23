@@ -4,10 +4,15 @@
 <h2>Show action</h2>
 <button class="btn btn-success" id="btn"> Click me...</button>
 
+<?php use\app\components\MyWidget; ?>
+<?php // echo MyWidget::widget(['name' => 'Вася']); ?>
 
+<?php  MyWidget::begin(); ?>
+<h3>widget content</h3>
+<?php  MyWidget::end(); ?>
 <?php 
 //echo count($cats->products); // lazy
-debug($cats);
+//debug($cats);
 //debug($cats);
 //$this->title = "Article";
 //$this->registerJsFile('@web/js/scripts.js', ['depends' => 'yii\web\YiiAsset'])

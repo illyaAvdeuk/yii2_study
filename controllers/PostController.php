@@ -10,12 +10,26 @@ class PostController extends AppController
 	public $layout = 'basic';
 	public function actionIndex(){
 			if( Yii::$app->request->isAjax ){
-					debug($_POST);
+					//debug($_POST);
 					return 'test';
 			}
+
+			$post = TestForm::findOne(2);
+			//$post->delete();
+		//	$post->email = 'test@example.com';
+		//	$post->save();
+			//debug($post); 
+
 			$model = new TestForm();
+		/*	$model->name = 'Автор';
+			$model->email = 'test@example.com';
+			$model->text = 'Текст сообщения';
+			$model->save();*/
+
+
+
 				if($model->load(Yii::$app->request->post())){
-					if ($model->validate()) {
+					if ($model->save()) {
 							Yii::$app->session->setFlash('success', '<div class="alert alert-success" role="alert">Data confirmed</div>');
 							$this->refresh();
 					} else {
